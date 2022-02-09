@@ -20,7 +20,7 @@ local statusnm = Instance.new("TextLabel")
 coroutine.wrap(
 	function()
 		while wait() do
-			counter = counter + 0.002
+			counter = counter + 0.000
 		end
 	end
 )()
