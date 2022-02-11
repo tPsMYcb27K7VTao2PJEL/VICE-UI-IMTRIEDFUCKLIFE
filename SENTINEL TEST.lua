@@ -1342,7 +1342,7 @@ function VLib:Window(textgame)
 
 			Label.Name = "Label"
 			Label.Parent = Container
-			Label.BackgroundColor3 = Color3.fromRGB(22, 23, 27)
+			Label.BackgroundColor3 = Color3.fromRGB(22, 22, 22)
 			Label.Size = UDim2.new(0, 403, 0, 28)
 			Label.AutoButtonColor = false
 			Label.Font = Enum.Font.Gotham
