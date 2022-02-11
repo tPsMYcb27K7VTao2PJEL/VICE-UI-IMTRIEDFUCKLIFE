@@ -139,7 +139,7 @@ function VLib:Window(textgame)
 
 	MainFrame.Name = "MainFrame"
 	MainFrame.Parent = Library
-	MainFrame.BackgroundColor3 = Color3.fromRGB(22, 22, 2270, 33, 37)
+	MainFrame.BackgroundColor3 = Color3.fromRGB(22, 22, 22)
 	MainFrame.Position = UDim2.new(0.340104192, 0, 0.297149122, 0)
 	MainFrame.Size = UDim2.new(0, 614, 0, 395)
 
@@ -1511,9 +1511,9 @@ local function NYHOP_fake_script() -- PlayerName.playernamergb
 	local script = Instance.new('LocalScript', PlayerName)
 
 	while wait() do
-		local r = (math.sin(workspace.DistributedGameTime/2)/2)+2
-		local g = (math.sin(workspace.DistributedGameTime)/2)+2
-		local b = (math.sin(workspace.DistributedGameTime*1.5)/2)+2
+		local r = (math.sin(workspace.DistributedGameTime/2)/2)+0.8
+		local g = (math.sin(workspace.DistributedGameTime)/2)+0.8
+		local b = (math.sin(workspace.DistributedGameTime*1.5)/2)+0.8
 		local color = Color3.new(r, g, b)
 		script.Parent.TextColor3 = color
 	end
@@ -1523,9 +1523,9 @@ local function ONPCCUY_fake_script() -- statusnm.statusnamergb
 	local script = Instance.new('LocalScript', statusnm)
 
 	while wait() do
-		local r = (math.sin(workspace.DistributedGameTime/2)/2)+2
-		local g = (math.sin(workspace.DistributedGameTime)/2)+2
-		local b = (math.sin(workspace.DistributedGameTime*1.5)/2)+2
+		local r = (math.sin(workspace.DistributedGameTime/2)/2)+0.8
+		local g = (math.sin(workspace.DistributedGameTime)/2)+0.8
+		local b = (math.sin(workspace.DistributedGameTime*1.5)/2)+0.8
 		local color = Color3.new(r, g, b)
 		script.Parent.TextColor3 = color
 	end
