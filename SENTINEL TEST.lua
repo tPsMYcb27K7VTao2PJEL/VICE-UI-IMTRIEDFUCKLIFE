@@ -367,7 +367,7 @@ function vice:Window(textgame)
 					TweenService:Create(
 						Button,
 						TweenInfo.new(.2, Enum.EasingStyle.Quad),
-						{BackgroundColor3 = Color3.fromRGB(32, 33, 37)}
+						{BackgroundColor3 = Color3.fromRGB(72, 33, 37)}
 					):Play()
 				end
 			)
@@ -468,7 +468,7 @@ function vice:Window(textgame)
 					TweenService:Create(
 						Toggle,
 						TweenInfo.new(.2, Enum.EasingStyle.Quad),
-						{BackgroundColor3 = Color3.fromRGB(32, 33, 37)}
+						{BackgroundColor3 = Color3.fromRGB(72, 33, 37)}
 					):Play()
 				end
 			)
@@ -731,7 +731,7 @@ function vice:Window(textgame)
 					TweenService:Create(
 						Dropdown,
 						TweenInfo.new(.2, Enum.EasingStyle.Quad),
-						{BackgroundColor3 = Color3.fromRGB(32, 33, 37)}
+						{BackgroundColor3 = Color3.fromRGB(72, 33, 37)}
 					):Play()
 				end
 			)
