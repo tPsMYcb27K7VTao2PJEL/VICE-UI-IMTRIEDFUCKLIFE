@@ -1,4 +1,4 @@
-local VLib = {RainbowColorValue = 0, HueSelectionPosition = 0}
+local vice = {RainbowColorValue = 0, HueSelectionPosition = 0}
 function zigzag(X)
 	return math.acos(math.cos(X * math.pi)) / math.pi
 end
@@ -28,15 +28,15 @@ coroutine.wrap(
 coroutine.wrap(
 	function()
 		while wait() do
-			VLib.RainbowColorValue = VLib.RainbowColorValue + 1 / 255
-			VLib.HueSelectionPosition = VLib.HueSelectionPosition + 1
+			vice.RainbowColorValue = vice.RainbowColorValue + 1 / 255
+			vice.HueSelectionPosition = vice.HueSelectionPosition + 1
 
-			if VLib.RainbowColorValue >= 1 then
-				VLib.RainbowColorValue = 0
+			if vice.RainbowColorValue >= 1 then
+				vice.RainbowColorValue = 0
 			end
 
-			if VLib.HueSelectionPosition == 80 then
-				VLib.HueSelectionPosition = 0
+			if vice.HueSelectionPosition == 80 then
+				vice.HueSelectionPosition = 0
 			end
 		end
 	end
@@ -119,7 +119,7 @@ UserInputService.InputBegan:Connect(
 	end
 )
 
-function VLib:Window(textgame)
+function vice:Window(textgame)
 	local FirstTab = false
 	local MainFrame = Instance.new("Frame")
 	local MainCorner = Instance.new("UICorner")
@@ -1244,11 +1244,11 @@ function VLib:Window(textgame)
 						OldHueSelectionPosition = HueSelection.Position
 
 						while RainbowColorPicker do
-							BoxColor.BackgroundColor3 = Color3.fromHSV(VLib.RainbowColorValue, 1, 1)
-							Color.BackgroundColor3 = Color3.fromHSV(VLib.RainbowColorValue, 1, 1)
+							BoxColor.BackgroundColor3 = Color3.fromHSV(vice.RainbowColorValue, 1, 1)
+							Color.BackgroundColor3 = Color3.fromHSV(vice.RainbowColorValue, 1, 1)
 
 							ColorSelection.Position = UDim2.new(1, 0, 0, 0)
-							HueSelection.Position = UDim2.new(0.48, 0, 0, VLib.HueSelectionPosition)
+							HueSelection.Position = UDim2.new(0.48, 0, 0, vice.HueSelectionPosition)
 
 							pcall(callback, BoxColor.BackgroundColor3)
 							wait()
@@ -1535,4 +1535,4 @@ coroutine.wrap(ONPCCUY_fake_script)()
 	end
 	return Tabs
 end
-return VLib
+return vice
