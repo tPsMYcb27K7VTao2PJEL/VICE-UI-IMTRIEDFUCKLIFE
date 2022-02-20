@@ -1035,7 +1035,7 @@ function vice:Window(textgame)
 
 			RainbowToggle.Name = "RainbowToggle"
 			RainbowToggle.Parent = ColorpickerFrame
-			RainbowToggle.BackgroundColor3 = Color3.fromRGB(32, 33, 37)
+			RainbowToggle.BackgroundColor3 = Color3.fromRGB(52, 33, 37)
 			RainbowToggle.Position = UDim2.new(0.610732794, 0, 0.431324542, 0)
 			RainbowToggle.Size = UDim2.new(0, 145, 0, 27)
 			RainbowToggle.AutoButtonColor = false
@@ -1390,7 +1390,7 @@ function vice:Window(textgame)
 
 			TextboxFrame.Name = "TextboxFrame"
 			TextboxFrame.Parent = Textbox
-			TextboxFrame.BackgroundColor3 = Color3.fromRGB(22, 23, 27)
+			TextboxFrame.BackgroundColor3 = Color3.fromRGB(42, 23, 27)
 			TextboxFrame.Position = UDim2.new(0.650124013, 0, 0.142857149, 0)
 			TextboxFrame.Size = UDim2.new(0, 134, 0, 19)
 
