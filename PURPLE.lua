@@ -20,7 +20,7 @@ local statusnm = Instance.new("TextLabel")
 coroutine.wrap(
 	function()
 		while wait() do
-			counter = counter + 0.002
+			counter = counter + 0.000
 		end
 	end
 )()
@@ -140,6 +140,7 @@ function vice:Window(textgame)
 	MainFrame.Name = "MainFrame"
 	MainFrame.Parent = Library
 	MainFrame.BackgroundColor3 = Color3.fromRGB(53, 4, 84)
+	Frame.BackgroundTransparency = 1.000
 	MainFrame.Position = UDim2.new(0.340104192, 0, 0.297149122, 0)
 	MainFrame.Size = UDim2.new(0, 614, 0, 395)
 
@@ -358,7 +359,7 @@ function vice:Window(textgame)
 					TweenService:Create(
 						Button,
 						TweenInfo.new(.2, Enum.EasingStyle.Quad),
-						{BackgroundColor3 = Color3.fromRGB(37, 39, 44)}
+						{BackgroundColor3 = Color3.fromRGB(69, 20, 153)}
 					):Play()
 				end
 			)
@@ -367,7 +368,7 @@ function vice:Window(textgame)
 					TweenService:Create(
 						Button,
 						TweenInfo.new(.2, Enum.EasingStyle.Quad),
-						{BackgroundColor3 = Color3.fromRGB(32, 33, 37)}
+						{BackgroundColor3 = Color3.fromRGB(62, 28, 103)}
 					):Play()
 				end
 			)
@@ -459,7 +460,7 @@ function vice:Window(textgame)
 					TweenService:Create(
 						Toggle,
 						TweenInfo.new(.2, Enum.EasingStyle.Quad),
-						{BackgroundColor3 = Color3.fromRGB(37, 39, 44)}
+						{BackgroundColor3 = Color3.fromRGB(69, 20, 153)}
 					):Play()
 				end
 			)
@@ -468,7 +469,7 @@ function vice:Window(textgame)
 					TweenService:Create(
 						Toggle,
 						TweenInfo.new(.2, Enum.EasingStyle.Quad),
-						{BackgroundColor3 = Color3.fromRGB(32, 33, 37)}
+						{BackgroundColor3 = Color3.fromRGB(62, 28, 103)}
 					):Play()
 				end
 			)
@@ -722,7 +723,7 @@ function vice:Window(textgame)
 					TweenService:Create(
 						Dropdown,
 						TweenInfo.new(.2, Enum.EasingStyle.Quad),
-						{BackgroundColor3 = Color3.fromRGB(37, 39, 44)}
+						{BackgroundColor3 = Color3.fromRGB(69, 20, 153)}
 					):Play()
 				end
 			)
@@ -731,7 +732,7 @@ function vice:Window(textgame)
 					TweenService:Create(
 						Dropdown,
 						TweenInfo.new(.2, Enum.EasingStyle.Quad),
-						{BackgroundColor3 = Color3.fromRGB(32, 33, 37)}
+						{BackgroundColor3 = Color3.fromRGB(62, 28, 103)}
 					):Play()
 				end
 			)
@@ -826,7 +827,7 @@ function vice:Window(textgame)
 						TweenService:Create(
 							Item,
 							TweenInfo.new(.2, Enum.EasingStyle.Quad),
-							{BackgroundColor3 = Color3.fromRGB(37, 39, 44)}
+							{BackgroundColor3 = Color3.fromRGB(69, 20, 153)}
 						):Play()
 					end
 				)
@@ -835,7 +836,7 @@ function vice:Window(textgame)
 						TweenService:Create(
 							Item,
 							TweenInfo.new(.2, Enum.EasingStyle.Quad),
-							{BackgroundColor3 = Color3.fromRGB(32, 33, 37)}
+							{BackgroundColor3 = Color3.fromRGB(62, 28, 103)}
 						):Play()
 					end
 				)
@@ -1097,7 +1098,7 @@ function vice:Window(textgame)
 					TweenService:Create(
 						Colorpicker,
 						TweenInfo.new(.2, Enum.EasingStyle.Quad),
-						{BackgroundColor3 = Color3.fromRGB(37, 39, 44)}
+						{BackgroundColor3 = Color3.fromRGB(69, 20, 153)}
 					):Play()
 				end
 			)
@@ -1106,7 +1107,7 @@ function vice:Window(textgame)
 					TweenService:Create(
 						Colorpicker,
 						TweenInfo.new(.2, Enum.EasingStyle.Quad),
-						{BackgroundColor3 = Color3.fromRGB(32, 33, 37)}
+						{BackgroundColor3 = Color3.fromRGB(62, 28, 103)}
 					):Play()
 				end
 			)
@@ -1444,7 +1445,7 @@ PlayerImage.Name = "PlayerImage"
 PlayerImage.Parent = Frame
 PlayerImage.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 PlayerImage.BackgroundTransparency = 1.000
-PlayerImage.Position = UDim2.new(0.0566037744, 0, 0.145454511, 0)
+PlayerImage.Position = UDim2.new(-0.0314465426, 0, 0.145454511, 0)
 PlayerImage.Size = UDim2.new(0, 52, 0, 52)
 
 CircleCorner_3.CornerRadius = UDim.new(2, 0)
@@ -1535,4 +1536,6 @@ coroutine.wrap(ONPCCUY_fake_script)()
 	end
 	return Tabs
 end
-return vice -- purple 
+return vice
+
+
