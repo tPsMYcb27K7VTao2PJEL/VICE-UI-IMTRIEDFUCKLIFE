@@ -684,7 +684,7 @@ function vice:Window(textgame)
 
 			DropdownFrame.Name = "DropdownFrame"
 			DropdownFrame.Parent = Container
-			DropdownFrame.BackgroundColor3 = Color3.fromRGB(42, 23, 27)
+			DropdownFrame.BackgroundColor3 = Color3.fromRGB(72, 33, 37)
 			DropdownFrame.BorderSizePixel = 0
 			DropdownFrame.Position = UDim2.new(0.334374994, 0, 0.604166687, 0)
 			DropdownFrame.Size = UDim2.new(0, 403, 0, 0)
