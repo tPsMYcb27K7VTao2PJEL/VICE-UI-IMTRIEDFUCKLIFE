@@ -1,3 +1,8 @@
+local vice = {RainbowColorValue = 0, HueSelectionPosition = 0}
+function zigzag(X)
+	return math.acos(math.cos(X * math.pi)) / math.pi
+end
+counter = 0
 local UserInputService = game:GetService("UserInputService")
 local TweenService = game:GetService("TweenService")
 local RunService = game:GetService("RunService")
@@ -12,6 +17,30 @@ local PlayerName = Instance.new("TextLabel")
 local ImageLabel = Instance.new("ImageLabel")
 local statusnm = Instance.new("TextLabel")
 
+coroutine.wrap(
+	function()
+		while wait() do
+			counter = counter + 0.000
+		end
+	end
+)()
+
+coroutine.wrap(
+	function()
+		while wait() do
+			vice.RainbowColorValue = vice.RainbowColorValue + 1 / 255
+			vice.HueSelectionPosition = vice.HueSelectionPosition + 1
+
+			if vice.RainbowColorValue >= 1 then
+				vice.RainbowColorValue = 0
+			end
+
+			if vice.HueSelectionPosition == 80 then
+				vice.HueSelectionPosition = 0
+			end
+		end
+	end
+)()
 
 local function MakeDraggable(topbarobject, object)
 	local Dragging = nil
@@ -393,7 +422,7 @@ function vice:Window(textgame)
 
 			ToggleFrameRainbow.Name = "ToggleFrameRainbow"
 			ToggleFrameRainbow.Parent = ToggleFrame
-			ToggleFrameRainbow.BackgroundColor3 = Color3.fromRGB(148, 96, 194)
+			ToggleFrameRainbow.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
 			ToggleFrameRainbow.BackgroundTransparency = 1.000
 			ToggleFrameRainbow.Position = UDim2.new(-0.0198377371, 0, 0.00601506233, 0)
 			ToggleFrameRainbow.Size = UDim2.new(0, 36, 0, 19)
@@ -463,8 +492,14 @@ function vice:Window(textgame)
 
 			Container.CanvasSize = UDim2.new(0, 0, 0, ContainerLayout.AbsoluteContentSize.Y)
 
-		
-	 
+			coroutine.wrap(
+				function()
+					while wait() do
+						ToggleFrameRainbow.BackgroundColor3 = Color3.fromHSV(zigzag(counter), .8, 1)
+					end
+				end
+			)()
+		end
 		function ContainerItems:Slider(text, min, max, start, callback) 
                         local dragging = false
 			local Slider = Instance.new("TextButton")
@@ -510,7 +545,7 @@ function vice:Window(textgame)
 
 			SliderIndicator.Name = "SliderIndicator"
 			SliderIndicator.Parent = SliderFrame
-			SliderIndicator.BackgroundColor3 = Color3.fromRGB(148, 96, 194)
+			SliderIndicator.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
 			SliderIndicator.BorderSizePixel = 0
 			SliderIndicator.Position = UDim2.new(-0.00260408712, 0, 0.0363603085, 0)
 			SliderIndicator.Size = UDim2.new((start or 0) / max, 0, 0, 11)
@@ -575,6 +610,14 @@ function vice:Window(textgame)
 
 			Container.CanvasSize = UDim2.new(0, 0, 0, ContainerLayout.AbsoluteContentSize.Y)
 
+			coroutine.wrap(
+				function()
+					while wait() do
+						SliderIndicator.BackgroundColor3 = Color3.fromHSV(zigzag(counter), .8, 1)
+					end
+				end
+			)()
+		end
 		function ContainerItems:Dropdown(text, list, callback)
 			local DropToggled = false
 			local FrameSize = 0
@@ -1015,7 +1058,7 @@ function vice:Window(textgame)
 
 			RainbowToggleFrameRainbow.Name = "RainbowToggleFrameRainbow"
 			RainbowToggleFrameRainbow.Parent = RainbowToggleFrame
-			RainbowToggleFrameRainbow.BackgroundColor3 = Color3.fromRGB(148, 96, 194)
+			RainbowToggleFrameRainbow.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
 			RainbowToggleFrameRainbow.BackgroundTransparency = 1.000
 			RainbowToggleFrameRainbow.Position = UDim2.new(-0.0198377371, 0, 0.00601506233, 0)
 			RainbowToggleFrameRainbow.Size = UDim2.new(0, 36, 0, 19)
@@ -1272,7 +1315,14 @@ function vice:Window(textgame)
 				end
 			)
 
-		
+			coroutine.wrap(
+				function()
+					while wait() do
+						RainbowToggleFrameRainbow.BackgroundColor3 = Color3.fromHSV(zigzag(counter), .8, 1)
+					end
+				end
+			)()
+		end
 		function ContainerItems:Label(text)
 			local Label = Instance.new("TextButton")
 			local LabelCorner = Instance.new("UICorner")
