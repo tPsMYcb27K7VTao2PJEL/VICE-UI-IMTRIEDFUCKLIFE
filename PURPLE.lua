@@ -150,7 +150,7 @@ function vice:Window(textgame)
 
 	LeftFrame.Name = "LeftFrame"
 	LeftFrame.Parent = MainFrame
-	LeftFrame.BackgroundColor3 = Color3.fromRGB(52, 5, 76)
+	LeftFrame.BackgroundColor3 = Color3.fromRGB(62, 28, 103)
 	LeftFrame.Position = UDim2.new(-0.000674468291, 0, -0.000149806539, 0)
 	LeftFrame.Size = UDim2.new(0, 186, 0, 395)
 
@@ -217,7 +217,7 @@ function vice:Window(textgame)
 
 	RainbowLine.Name = "RainbowLine"
 	RainbowLine.Parent = MainFrame
-	RainbowLine.BackgroundColor3 = Color3.fromRGB(118, 106, 255)
+	RainbowLine.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 	RainbowLine.Position = UDim2.new(-0.000674468291, 0, -0.000149783576, 0)
 	RainbowLine.Size = UDim2.new(0, 614, 0, 2)
 
@@ -232,18 +232,10 @@ function vice:Window(textgame)
 	DragFrame.Parent = MainFrame
 	DragFrame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 	DragFrame.BackgroundTransparency = 1.000
-	DragFrame.Position = UDim2.new(0.30130294, 0, 0.00253164559, 0)
-	DragFrame.Size = UDim2.new(0, 428, 0, 21)
+	DragFrame.Position = UDim2.new(-0.000674468291, 0, 0.00253164559, 0)
+	DragFrame.Size = UDim2.new(0, 613, 0, 393)
 	MakeDraggable(DragFrame, MainFrame)
 
-	coroutine.wrap(
-		function()
-			while wait() do
-				RainbowLine.BackgroundColor3 = Color3.fromHSV(zigzag(counter), .8, 1)
-				Circle.BackgroundColor3 = Color3.fromHSV(zigzag(counter), .8, 1)
-			end
-		end
-	)()
 	local Tabs = {}
 	function Tabs:Tab(text)
 		local Tab = Instance.new("TextButton")
@@ -954,7 +946,7 @@ function vice:Window(textgame)
 
 			ColorpickerFrame.Name = "ColorpickerFrame"
 			ColorpickerFrame.Parent = Container
-			ColorpickerFrame.BackgroundColor3 = Color3.fromRGB(32, 33, 37)
+			ColorpickerFrame.BackgroundColor3 = Color3.fromRGB(62, 28, 103)
 			ColorpickerFrame.BorderSizePixel = 0
 			ColorpickerFrame.Position = UDim2.new(0.165624991, 0, 0.671052635, 0)
 			ColorpickerFrame.Size = UDim2.new(0, 403, 0, 0)
@@ -1055,7 +1047,7 @@ function vice:Window(textgame)
 			RainbowTitle.Position = UDim2.new(0.0204080511, 0, 0, 0)
 			RainbowTitle.Size = UDim2.new(0, 29, 0, 27)
 			RainbowTitle.Font = Enum.Font.Gotham
-			RainbowTitle.Text = "Toggle"
+			RainbowTitle.Text = "Rainbow"
 			RainbowTitle.TextColor3 = Color3.fromRGB(255, 255, 255)
 			RainbowTitle.TextSize = 14.000
 			RainbowTitle.TextXAlignment = Enum.TextXAlignment.Left
@@ -1537,5 +1529,10 @@ coroutine.wrap(ONPCCUY_fake_script)()
 	return Tabs
 end
 return vice
+
+
+
+
+
 
 
