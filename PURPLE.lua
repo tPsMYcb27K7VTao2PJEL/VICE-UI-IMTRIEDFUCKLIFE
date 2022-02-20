@@ -233,7 +233,7 @@ function vice:Window(textgame)
 	DragFrame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 	DragFrame.BackgroundTransparency = 1.000
 	DragFrame.Position = UDim2.new(-0.000674468291, 0, 0.00253164559, 0)
-	DragFrame.Size = UDim2.new(0, 613, 0, 393)
+	DragFrame.Size = UDim2.new(0, 613, 0, 65)
 	MakeDraggable(DragFrame, MainFrame)
 
 	local Tabs = {}
@@ -1013,7 +1013,7 @@ function vice:Window(textgame)
 
 			Confirm.Name = "Confirm"
 			Confirm.Parent = ColorpickerFrame
-			Confirm.BackgroundColor3 = Color3.fromRGB(32, 33, 37)
+			Confirm.BackgroundColor3 = Color3.fromRGB(32, 2, 57)
 			Confirm.BackgroundTransparency = 0.010
 			Confirm.Position = UDim2.new(0.612244904, 0, 0.0900000036, 0)
 			Confirm.Size = UDim2.new(0, 145, 0, 27)
@@ -1028,7 +1028,7 @@ function vice:Window(textgame)
 
 			RainbowToggle.Name = "RainbowToggle"
 			RainbowToggle.Parent = ColorpickerFrame
-			RainbowToggle.BackgroundColor3 = Color3.fromRGB(32, 33, 37)
+			RainbowToggle.BackgroundColor3 = Color3.fromRGB(32, 2, 57)
 			RainbowToggle.Position = UDim2.new(0.610732794, 0, 0.431324542, 0)
 			RainbowToggle.Size = UDim2.new(0, 145, 0, 27)
 			RainbowToggle.AutoButtonColor = false
@@ -1383,7 +1383,7 @@ function vice:Window(textgame)
 
 			TextboxFrame.Name = "TextboxFrame"
 			TextboxFrame.Parent = Textbox
-			TextboxFrame.BackgroundColor3 = Color3.fromRGB(22, 23, 27)
+			TextboxFrame.BackgroundColor3 = Color3.fromRGB(32, 2, 57)
 			TextboxFrame.Position = UDim2.new(0.650124013, 0, 0.142857149, 0)
 			TextboxFrame.Size = UDim2.new(0, 134, 0, 19)
 
@@ -1421,6 +1421,7 @@ function vice:Window(textgame)
 		end
 		ImageLabel.Parent = Circle
 ImageLabel.BackgroundColor3 = Color3.fromRGB(32, 33, 37)
+ImageLabel.BackgroundTransparency = 1.000
 ImageLabel.BorderSizePixel = 0		
 ImageLabel.Size = UDim2.new(0, 38, 0, 38)
 ImageLabel.Image = "rbxassetid://8709145048"
@@ -1462,7 +1463,7 @@ statusnm.BackgroundTransparency = 1.010
 statusnm.Position = UDim2.new(0.295621276, 0, -0.00947505236, 0)
 statusnm.Size = UDim2.new(0, 110, 0, 32)
 statusnm.Font = Enum.Font.Gotham
-statusnm.Text = "Premium user 💸"
+statusnm.Text = "OROSPU ÇOCUĞU"
 statusnm.TextColor3 = Color3.fromRGB(255, 255, 255)
 statusnm.TextSize = 11.500
 
