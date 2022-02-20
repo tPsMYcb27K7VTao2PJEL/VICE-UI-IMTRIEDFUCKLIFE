@@ -28,7 +28,7 @@ coroutine.wrap(
 coroutine.wrap(
 	function()
 		while wait() do
-			vice.RainbowColorValue = vice.RainbowColorValue + 1 / 255
+			vice.RainbowColorValue = vice.RainbowColorValue + 1 / 155
 			vice.HueSelectionPosition = vice.HueSelectionPosition + 1
 
 			if vice.RainbowColorValue >= 1 then
@@ -358,7 +358,7 @@ function vice:Window(textgame)
 					TweenService:Create(
 						Button,
 						TweenInfo.new(.2, Enum.EasingStyle.Quad),
-						{BackgroundColor3 = Color3.fromRGB(37, 39, 44)}
+						{BackgroundColor3 = Color3.fromRGB(87, 34, 39)}
 					):Play()
 				end
 			)
@@ -459,7 +459,7 @@ function vice:Window(textgame)
 					TweenService:Create(
 						Toggle,
 						TweenInfo.new(.2, Enum.EasingStyle.Quad),
-						{BackgroundColor3 = Color3.fromRGB(37, 39, 44)}
+						{BackgroundColor3 = Color3.fromRGB(87, 34, 39)}
 					):Play()
 				end
 			)
@@ -722,7 +722,7 @@ function vice:Window(textgame)
 					TweenService:Create(
 						Dropdown,
 						TweenInfo.new(.2, Enum.EasingStyle.Quad),
-						{BackgroundColor3 = Color3.fromRGB(37, 39, 44)}
+						{BackgroundColor3 = Color3.fromRGB(87, 34, 39)}
 					):Play()
 				end
 			)
@@ -826,7 +826,7 @@ function vice:Window(textgame)
 						TweenService:Create(
 							Item,
 							TweenInfo.new(.2, Enum.EasingStyle.Quad),
-							{BackgroundColor3 = Color3.fromRGB(37, 39, 44)}
+							{BackgroundColor3 = Color3.fromRGB(87, 34, 39)}
 						):Play()
 					end
 				)
@@ -1097,7 +1097,7 @@ function vice:Window(textgame)
 					TweenService:Create(
 						Colorpicker,
 						TweenInfo.new(.2, Enum.EasingStyle.Quad),
-						{BackgroundColor3 = Color3.fromRGB(37, 39, 44)}
+						{BackgroundColor3 = Color3.fromRGB(87, 34, 39)}
 					):Play()
 				end
 			)
@@ -1427,7 +1427,7 @@ function vice:Window(textgame)
 			Container.CanvasSize = UDim2.new(0, 0, 0, ContainerLayout.AbsoluteContentSize.Y)
 		end
 		ImageLabel.Parent = Circle
-ImageLabel.BackgroundColor3 = Color3.fromRGB(32, 33, 37)
+ImageLabel.BackgroundColor3 = Color3.fromRGB(70, 33, 37)
 ImageLabel.BorderSizePixel = 0		
 ImageLabel.Size = UDim2.new(0, 38, 0, 38)
 ImageLabel.Image = "rbxassetid://8709145048"
