@@ -809,7 +809,7 @@ function vice:Window(textgame)
 
 				Item.Name = "Item"
 				Item.Parent = DropdownHolder
-				Item.BackgroundColor3 = Color3.fromRGB(42, 23, 27)
+				Item.BackgroundColor3 = Color3.fromRGB(72, 33, 37)
 				Item.Position = UDim2.new(0, 0, 0.0808080807, 0)
 				Item.Size = UDim2.new(0, 382, 0, 24)
 				Item.AutoButtonColor = false
