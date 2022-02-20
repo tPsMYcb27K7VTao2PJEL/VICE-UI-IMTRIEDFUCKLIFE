@@ -139,7 +139,7 @@ function vice:Window(textgame)
 
 	MainFrame.Name = "MainFrame"
 	MainFrame.Parent = Library
-	MainFrame.BackgroundColor3 = Color3.fromRGB(22, 22, 22)
+	MainFrame.BackgroundColor3 = Color3.fromRGB(42, 22, 22)
 	MainFrame.Position = UDim2.new(0.340104192, 0, 0.297149122, 0)
 	MainFrame.Size = UDim2.new(0, 614, 0, 395)
 
@@ -341,7 +341,7 @@ function vice:Window(textgame)
 
 			Button.Name = "Button"
 			Button.Parent = Container
-			Button.BackgroundColor3 = Color3.fromRGB(32, 33, 37)
+			Button.BackgroundColor3 = Color3.fromRGB(72, 33, 37)
 			Button.Size = UDim2.new(0, 403, 0, 28)
 			Button.AutoButtonColor = false
 			Button.Font = Enum.Font.Gotham
@@ -398,7 +398,7 @@ function vice:Window(textgame)
 
 			Toggle.Name = "Toggle"
 			Toggle.Parent = Container
-			Toggle.BackgroundColor3 = Color3.fromRGB(32, 33, 37)
+			Toggle.BackgroundColor3 = Color3.fromRGB(72, 33, 37)
 			Toggle.Position = UDim2.new(-0.747557044, 0, 0.729113936, 0)
 			Toggle.Size = UDim2.new(0, 403, 0, 28)
 			Toggle.AutoButtonColor = false
@@ -643,7 +643,7 @@ function vice:Window(textgame)
 
 			Dropdown.Name = "Dropdown"
 			Dropdown.Parent = Container
-			Dropdown.BackgroundColor3 = Color3.fromRGB(32, 33, 37)
+			Dropdown.BackgroundColor3 = Color3.fromRGB(72, 33, 37)
 			Dropdown.Position = UDim2.new(-0.747557044, 0, 0.729113936, 0)
 			Dropdown.Size = UDim2.new(0, 403, 0, 28)
 			Dropdown.AutoButtonColor = false
@@ -1342,7 +1342,7 @@ function vice:Window(textgame)
 
 			Label.Name = "Label"
 			Label.Parent = Container
-			Label.BackgroundColor3 = Color3.fromRGB(22, 22, 22)
+			Label.BackgroundColor3 = Color3.fromRGB(42, 22, 22)
 			Label.Size = UDim2.new(0, 403, 0, 28)
 			Label.AutoButtonColor = false
 			Label.Font = Enum.Font.Gotham
