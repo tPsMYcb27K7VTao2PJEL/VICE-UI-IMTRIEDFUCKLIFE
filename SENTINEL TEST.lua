@@ -926,7 +926,7 @@ function vice:Window(textgame)
 			BoxcolorCorner.Name = "BoxcolorCorner"
 			BoxcolorCorner.Parent = BoxColor
 
-			ColorpickerCorner.CornerRadius = UDim.new(0, 8)
+			ColorpickerCorner.CornerRadius = UDim.new(1, 0)
 			ColorpickerCorner.Name = "ColorpickerCorner"
 			ColorpickerCorner.Parent = Colorpicker
 
@@ -953,7 +953,7 @@ function vice:Window(textgame)
 
 			ColorpickerFrame.Name = "ColorpickerFrame"
 			ColorpickerFrame.Parent = Container
-			ColorpickerFrame.BackgroundColor3 = Color3.fromRGB(32, 33, 37)
+			ColorpickerFrame.BackgroundColor3 = Color3.fromRGB(72, 33, 37)
 			ColorpickerFrame.BorderSizePixel = 0
 			ColorpickerFrame.Position = UDim2.new(0.165624991, 0, 0.671052635, 0)
 			ColorpickerFrame.Size = UDim2.new(0, 403, 0, 0)
@@ -1020,7 +1020,7 @@ function vice:Window(textgame)
 
 			Confirm.Name = "Confirm"
 			Confirm.Parent = ColorpickerFrame
-			Confirm.BackgroundColor3 = Color3.fromRGB(32, 33, 37)
+			Confirm.BackgroundColor3 = Color3.fromRGB(72, 33, 37)
 			Confirm.BackgroundTransparency = 0.010
 			Confirm.Position = UDim2.new(0.612244904, 0, 0.0900000036, 0)
 			Confirm.Size = UDim2.new(0, 145, 0, 27)
