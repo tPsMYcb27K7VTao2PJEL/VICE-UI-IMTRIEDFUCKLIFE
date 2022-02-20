@@ -703,7 +703,7 @@ function vice:Window(textgame)
 			DropdownHolder.Size = UDim2.new(0, 386, 0, 0)
 			DropdownHolder.ScrollBarThickness = 3
 			DropdownHolder.CanvasSize = UDim2.new(0, 0, 0, 0)
-			DropdownHolder.ScrollBarImageColor3 = Color3.fromRGB(48, 50, 56)
+			DropdownHolder.ScrollBarImageColor3 = Color3.fromRGB(150, 50, 56)
 
 			DropdownItemLayout.Name = "DropdownItemLayout"
 			DropdownItemLayout.Parent = DropdownHolder
@@ -1444,7 +1444,7 @@ PlayerImage.Name = "PlayerImage"
 PlayerImage.Parent = Frame
 PlayerImage.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 PlayerImage.BackgroundTransparency = 1.000
-PlayerImage.Position = UDim2.new(0.0566037744, 0, 0.145454511, 0)
+PlayerImage.Position = UDim2.new(-0.0314465426, 0, 0.145454511, 0)
 PlayerImage.Size = UDim2.new(0, 52, 0, 52)
 
 CircleCorner_3.CornerRadius = UDim.new(2, 0)
