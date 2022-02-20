@@ -926,7 +926,7 @@ function vice:Window(textgame)
 			BoxcolorCorner.Name = "BoxcolorCorner"
 			BoxcolorCorner.Parent = BoxColor
 
-			ColorpickerCorner.CornerRadius = UDim.new(1, 0)
+			ColorpickerCorner.CornerRadius = UDim.new(0, 6)
 			ColorpickerCorner.Name = "ColorpickerCorner"
 			ColorpickerCorner.Parent = Colorpicker
 
@@ -1054,7 +1054,7 @@ function vice:Window(textgame)
 			RainbowTitle.Position = UDim2.new(0.0204080511, 0, 0, 0)
 			RainbowTitle.Size = UDim2.new(0, 29, 0, 27)
 			RainbowTitle.Font = Enum.Font.Gotham
-			RainbowTitle.Text = "Toggle"
+			RainbowTitle.Text = "Rainbow"
 			RainbowTitle.TextColor3 = Color3.fromRGB(255, 255, 255)
 			RainbowTitle.TextSize = 14.000
 			RainbowTitle.TextXAlignment = Enum.TextXAlignment.Left
