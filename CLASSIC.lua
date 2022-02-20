@@ -1434,6 +1434,7 @@ ImageLabel.Image = "rbxassetid://8709145048"
 
 Frame.Parent = MainFrame
 Frame.BackgroundColor3 = Color3.fromRGB(22, 23, 27)
+Frame.BackgroundTransparency = 1.000		
 Frame.Position = UDim2.new(0.0209611524, 0, 0.81790787, 0)
 Frame.Size = UDim2.new(0, 165, 0, 70)
 
