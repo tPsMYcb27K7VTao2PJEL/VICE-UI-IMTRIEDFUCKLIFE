@@ -526,7 +526,7 @@ function vice:Window(textgame)
 
 			Slider.Name = "Slider"
 			Slider.Parent = Container
-			Slider.BackgroundColor3 = Color3.fromRGB(32, 33, 37)
+			Slider.BackgroundColor3 = Color3.fromRGB(72, 33, 37)
 			Slider.Position = UDim2.new(-0.747557044, 0, 0.729113936, 0)
 			Slider.Size = UDim2.new(0, 403, 0, 49)
 			Slider.AutoButtonColor = false
@@ -926,7 +926,7 @@ function vice:Window(textgame)
 			BoxcolorCorner.Name = "BoxcolorCorner"
 			BoxcolorCorner.Parent = BoxColor
 
-			ColorpickerCorner.CornerRadius = UDim.new(0, 6)
+			ColorpickerCorner.CornerRadius = UDim.new(0, 8)
 			ColorpickerCorner.Name = "ColorpickerCorner"
 			ColorpickerCorner.Parent = Colorpicker
 
@@ -1367,7 +1367,7 @@ function vice:Window(textgame)
 
 			Textbox.Name = "Textbox"
 			Textbox.Parent = Container
-			Textbox.BackgroundColor3 = Color3.fromRGB(32, 33, 37)
+			Textbox.BackgroundColor3 = Color3.fromRGB(72, 33, 37)
 			Textbox.Position = UDim2.new(-0.747557044, 0, 0.729113936, 0)
 			Textbox.Size = UDim2.new(0, 403, 0, 28)
 			Textbox.AutoButtonColor = false
