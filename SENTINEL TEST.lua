@@ -895,7 +895,7 @@ function vice:Window(textgame)
 
 			Colorpicker.Name = "Colorpicker"
 			Colorpicker.Parent = Container
-			Colorpicker.BackgroundColor3 = Color3.fromRGB(32, 33, 37)
+			Colorpicker.BackgroundColor3 = Color3.fromRGB(72, 33, 37)
 			Colorpicker.Position = UDim2.new(-0.747557044, 0, 0.729113936, 0)
 			Colorpicker.Size = UDim2.new(0, 403, 0, 28)
 			Colorpicker.AutoButtonColor = false
