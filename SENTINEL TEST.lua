@@ -684,7 +684,7 @@ function vice:Window(textgame)
 
 			DropdownFrame.Name = "DropdownFrame"
 			DropdownFrame.Parent = Container
-			DropdownFrame.BackgroundColor3 = Color3.fromRGB(32, 33, 37)
+			DropdownFrame.BackgroundColor3 = Color3.fromRGB(42, 23, 27)
 			DropdownFrame.BorderSizePixel = 0
 			DropdownFrame.Position = UDim2.new(0.334374994, 0, 0.604166687, 0)
 			DropdownFrame.Size = UDim2.new(0, 403, 0, 0)
@@ -809,7 +809,7 @@ function vice:Window(textgame)
 
 				Item.Name = "Item"
 				Item.Parent = DropdownHolder
-				Item.BackgroundColor3 = Color3.fromRGB(32, 33, 37)
+				Item.BackgroundColor3 = Color3.fromRGB(42, 23, 27)
 				Item.Position = UDim2.new(0, 0, 0.0808080807, 0)
 				Item.Size = UDim2.new(0, 382, 0, 24)
 				Item.AutoButtonColor = false
