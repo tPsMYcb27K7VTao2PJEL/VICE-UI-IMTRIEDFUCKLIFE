@@ -1,7 +1,4 @@
 local vice = {RainbowColorValue = 0, HueSelectionPosition = 0}
-function zigzag(X)
-	return math.acos(math.cos(X * math.pi)) / math.pi
-end
 counter = 0
 local UserInputService = game:GetService("UserInputService")
 local TweenService = game:GetService("TweenService")
@@ -17,30 +14,6 @@ local PlayerName = Instance.new("TextLabel")
 local ImageLabel = Instance.new("ImageLabel")
 local statusnm = Instance.new("TextLabel")
 
-coroutine.wrap(
-	function()
-		while wait() do
-			counter = counter + 0.000
-		end
-	end
-)()
-
-coroutine.wrap(
-	function()
-		while wait() do
-			vice.RainbowColorValue = vice.RainbowColorValue + 1 / 255
-			vice.HueSelectionPosition = vice.HueSelectionPosition + 1
-
-			if vice.RainbowColorValue >= 1 then
-				vice.RainbowColorValue = 0
-			end
-
-			if vice.HueSelectionPosition == 80 then
-				vice.HueSelectionPosition = 0
-			end
-		end
-	end
-)()
 
 local function MakeDraggable(topbarobject, object)
 	local Dragging = nil
@@ -493,7 +466,7 @@ function vice:Window(textgame)
 			Container.CanvasSize = UDim2.new(0, 0, 0, ContainerLayout.AbsoluteContentSize.Y)
 
 		
-		end 
+	 
 		function ContainerItems:Slider(text, min, max, start, callback) 
                         local dragging = false
 			local Slider = Instance.new("TextButton")
