@@ -1,5 +1,3 @@
-local vice = {RainbowColorValue = 0, HueSelectionPosition = 0}
-counter = 0
 local UserInputService = game:GetService("UserInputService")
 local TweenService = game:GetService("TweenService")
 local RunService = game:GetService("RunService")
