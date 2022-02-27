@@ -17,6 +17,30 @@ local PlayerName = Instance.new("TextLabel")
 local ImageLabel = Instance.new("ImageLabel")
 local statusnm = Instance.new("TextLabel")
 
+coroutine.wrap(
+	function()
+		while wait() do
+			counter = counter + 0.000
+		end
+	end
+)()
+
+coroutine.wrap(
+	function()
+		while wait() do
+			vice.RainbowColorValue = vice.RainbowColorValue + 1 / 255
+			vice.HueSelectionPosition = vice.HueSelectionPosition + 1
+
+			if vice.RainbowColorValue >= 1 then
+				vice.RainbowColorValue = 0
+			end
+
+			if vice.HueSelectionPosition == 80 then
+				vice.HueSelectionPosition = 0
+			end
+		end
+	end
+)()
 
 local function MakeDraggable(topbarobject, object)
 	local Dragging = nil
@@ -467,9 +491,16 @@ function vice:Window(textgame)
 				end
 			)
 
-	
+			Container.CanvasSize = UDim2.new(0, 0, 0, ContainerLayout.AbsoluteContentSize.Y)
 
-
+			coroutine.wrap(
+				function()
+					while wait() do
+						ToggleFrameRainbow.BackgroundColor3 = Color3.fromHSV(zigzag(counter), .8, 1)
+					end
+				end
+			)()
+		end
 		function ContainerItems:Slider(text, min, max, start, callback) 
                         local dragging = false
 			local Slider = Instance.new("TextButton")
@@ -578,7 +609,16 @@ function vice:Window(textgame)
 				end
 			)
 
-		
+			Container.CanvasSize = UDim2.new(0, 0, 0, ContainerLayout.AbsoluteContentSize.Y)
+
+			coroutine.wrap(
+				function()
+					while wait() do
+						SliderIndicator.BackgroundColor3 = Color3.fromHSV(zigzag(counter), .8, 1)
+					end
+				end
+			)()
+		end
 		function ContainerItems:Dropdown(text, list, callback)
 			local DropToggled = false
 			local FrameSize = 0
@@ -1019,7 +1059,7 @@ function vice:Window(textgame)
 
 			RainbowToggleFrameRainbow.Name = "RainbowToggleFrameRainbow"
 			RainbowToggleFrameRainbow.Parent = RainbowToggleFrame
-			RainbowToggleFrameRainbow.BackgroundColor3 = Color3.fromRGB(148, 96, 194)
+			RainbowToggleFrameRainbow.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
 			RainbowToggleFrameRainbow.BackgroundTransparency = 1.000
 			RainbowToggleFrameRainbow.Position = UDim2.new(-0.0198377371, 0, 0.00601506233, 0)
 			RainbowToggleFrameRainbow.Size = UDim2.new(0, 36, 0, 19)
@@ -1276,7 +1316,14 @@ function vice:Window(textgame)
 				end
 			)
 
-			
+			coroutine.wrap(
+				function()
+					while wait() do
+						RainbowToggleFrameRainbow.BackgroundColor3 = Color3.fromHSV(zigzag(counter), .8, 1)
+					end
+				end
+			)()
+		end
 		function ContainerItems:Label(text)
 			local Label = Instance.new("TextButton")
 			local LabelCorner = Instance.new("UICorner")
@@ -1478,3 +1525,7 @@ coroutine.wrap(ONPCCUY_fake_script)()
 	return Tabs
 end
 return vice
+
+
+
+
