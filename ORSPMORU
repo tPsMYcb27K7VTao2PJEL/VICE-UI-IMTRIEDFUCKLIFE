@@ -491,16 +491,9 @@ function vice:Window(textgame)
 				end
 			)
 
-			Container.CanvasSize = UDim2.new(0, 0, 0, ContainerLayout.AbsoluteContentSize.Y)
+			Container.CanvasSize = UDim2.new(0, 0, 0, ContainerLayout.AbsoluteContentSize.Y) --ok
 
-			coroutine.wrap(
-				function()
-					while wait() do
-						ToggleFrameRainbow.BackgroundColor3 = Color3.fromHSV(zigzag(counter), .8, 1)
-					end
-				end
-			)()
-		end
+
 		function ContainerItems:Slider(text, min, max, start, callback) 
                         local dragging = false
 			local Slider = Instance.new("TextButton")
