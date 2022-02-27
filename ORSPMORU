@@ -25,22 +25,6 @@ coroutine.wrap(
 	end
 )()
 
-coroutine.wrap(
-	function()
-		while wait() do
-			vice.RainbowColorValue = vice.RainbowColorValue + 1 / 255
-			vice.HueSelectionPosition = vice.HueSelectionPosition + 1
-
-			if vice.RainbowColorValue >= 1 then
-				vice.RainbowColorValue = 0
-			end
-
-			if vice.HueSelectionPosition == 80 then
-				vice.HueSelectionPosition = 0
-			end
-		end
-	end
-)()
 
 local function MakeDraggable(topbarobject, object)
 	local Dragging = nil
