@@ -17,14 +17,6 @@ local PlayerName = Instance.new("TextLabel")
 local ImageLabel = Instance.new("ImageLabel")
 local statusnm = Instance.new("TextLabel")
 
-coroutine.wrap(
-	function()
-		while wait() do
-			counter = counter + 0.000
-		end
-	end
-)()
-
 
 local function MakeDraggable(topbarobject, object)
 	local Dragging = nil
@@ -475,7 +467,7 @@ function vice:Window(textgame)
 				end
 			)
 
-			Container.CanvasSize = UDim2.new(0, 0, 0, ContainerLayout.AbsoluteContentSize.Y) --ok
+	
 
 
 		function ContainerItems:Slider(text, min, max, start, callback) 
@@ -586,16 +578,7 @@ function vice:Window(textgame)
 				end
 			)
 
-			Container.CanvasSize = UDim2.new(0, 0, 0, ContainerLayout.AbsoluteContentSize.Y)
-
-			coroutine.wrap(
-				function()
-					while wait() do
-						SliderIndicator.BackgroundColor3 = Color3.fromHSV(zigzag(counter), .8, 1)
-					end
-				end
-			)()
-		end
+		
 		function ContainerItems:Dropdown(text, list, callback)
 			local DropToggled = false
 			local FrameSize = 0
