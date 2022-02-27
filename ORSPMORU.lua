@@ -491,8 +491,6 @@ function vice:Window(textgame)
 				end
 			)
 
-			Container.CanvasSize = UDim2.new(0, 0, 0, ContainerLayout.AbsoluteContentSize.Y)
--- test --ok31 31
 		function ContainerItems:Slider(text, min, max, start, callback) 
                         local dragging = false
 			local Slider = Instance.new("TextButton")
