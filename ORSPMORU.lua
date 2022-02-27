@@ -1514,5 +1514,6 @@ coroutine.wrap(ONPCCUY_fake_script)()
 	end
 	return Tabs
 end
-return vice
 end
+return vice
+
