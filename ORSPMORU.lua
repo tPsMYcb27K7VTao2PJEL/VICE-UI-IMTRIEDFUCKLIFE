@@ -491,16 +491,6 @@ function vice:Window(textgame)
 				end
 			)
 
-			Container.CanvasSize = UDim2.new(0, 0, 0, ContainerLayout.AbsoluteContentSize.Y)
-
-			coroutine.wrap(
-				function()
-					while wait() do
-						ToggleFrameRainbow.BackgroundColor3 = Color3.fromHSV(zigzag(counter), .8, 1)
-					end
-				end
-			)()
-		end
 		function ContainerItems:Slider(text, min, max, start, callback) 
                         local dragging = false
 			local Slider = Instance.new("TextButton")
@@ -1049,7 +1039,7 @@ function vice:Window(textgame)
 
 			RainbowToggleFrame.Name = "RainbowToggleFrame"
 			RainbowToggleFrame.Parent = RainbowToggle
-			RainbowToggleFrame.BackgroundColor3 = Color3.fromRGB(22, 23, 27)
+			RainbowToggleFrame.BackgroundColor3 = Color3.fromRGB(62, 28, 103)
 			RainbowToggleFrame.Position = UDim2.new(0.693, 0, 0.142857149, 0)
 			RainbowToggleFrame.Size = UDim2.new(0, 36, 0, 19)
 
@@ -1059,7 +1049,7 @@ function vice:Window(textgame)
 
 			RainbowToggleFrameRainbow.Name = "RainbowToggleFrameRainbow"
 			RainbowToggleFrameRainbow.Parent = RainbowToggleFrame
-			RainbowToggleFrameRainbow.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
+			RainbowToggleFrameRainbow.BackgroundColor3 = Color3.fromRGB(148, 96, 194)
 			RainbowToggleFrameRainbow.BackgroundTransparency = 1.000
 			RainbowToggleFrameRainbow.Position = UDim2.new(-0.0198377371, 0, 0.00601506233, 0)
 			RainbowToggleFrameRainbow.Size = UDim2.new(0, 36, 0, 19)
@@ -1525,6 +1515,4 @@ coroutine.wrap(ONPCCUY_fake_script)()
 	return Tabs
 end
 return vice
-
-
 
