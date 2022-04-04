@@ -1,0 +1,24 @@
+if _G.keycheckers == true then
+local Gray = Color3.fromRGB(153, 163, 164)
+local Blue = Color3.fromRGB(46, 134, 193)
+
+local ScreenGui = Instance.new("ScreenGui")
+local Button = Instance.new("TextButton")
+
+ScreenGui.Name = "UI"
+ScreenGui.Parent = game:GetService("CoreGui")
+ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+Button.Name = "Button"
+Button.Parent = ScreenGui
+Button.BackgroundColor3 = Color3.fromRGB(153, 163, 164)
+Button.BorderColor3 = Color3.fromRGB(153, 163, 164)
+Button.Position = UDim2.new(0.342229187, 0, 0.449304163, 0)
+Button.Size = UDim2.new(0, 200, 0, 50)
+Button.Font = Enum.Font.Gotham
+Button.TextColor3 = Color3.fromRGB(0, 0, 0)
+Button.TextSize = 14.000
+Button.MouseButton1Click:Connect(function()
+    Button.BackgroundColor3 = Button.BackgroundColor3 == Gray and Blue or Button.BackgroundColor3 == Blue and Gray
+end)
+end
