@@ -24,4 +24,3 @@ Button.MouseButton1Click:Connect(function()
     Button.BackgroundColor3 = Button.BackgroundColor3 == Gray and Blue or Button.BackgroundColor3 == Blue and Gray
 end)
 end
-end
