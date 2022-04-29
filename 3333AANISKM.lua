@@ -238,7 +238,7 @@ function vice:Window(textgame)
 	coroutine.wrap(
 		function()
 			while wait() do
-				RainbowLine.BackgroundColor3 = Color3.fromRGB(31, 31, 41)
+				RainbowLine.BackgroundColor3 = Color3.fromRGB(255,255,255)
 				Circle.BackgroundColor3 = Color3.fromHSV(zigzag(counter), .8, 1)
 			end
 		end
@@ -1335,7 +1335,7 @@ function vice:Window(textgame)
 
 			Label.Name = "Label"
 			Label.Parent = Container
-			Label.BackgroundColor3 = Color3.fromRGB(42, 22, 22)
+			Label.BackgroundColor3 = Color3.fromRGB(27, 42, 53)
 			Label.Size = UDim2.new(0, 403, 0, 28)
 			Label.AutoButtonColor = false
 			Label.Font = Enum.Font.Gotham
