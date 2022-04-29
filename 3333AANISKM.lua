@@ -1361,7 +1361,7 @@ function vice:Window(textgame)
 
 			Textbox.Name = "Textbox"
 			Textbox.Parent = Container
-			Textbox.BackgroundColor3 = Color3.fromRGB(14, 14, 30)
+			Textbox.BackgroundColor3 = Color3.fromRGB(43, 43, 60)
 			Textbox.Position = UDim2.new(-0.747557044, 0, 0.729113936, 0)
 			Textbox.Size = UDim2.new(0, 403, 0, 28)
 			Textbox.AutoButtonColor = false
@@ -1384,7 +1384,7 @@ function vice:Window(textgame)
 
 			TextboxFrame.Name = "TextboxFrame"
 			TextboxFrame.Parent = Textbox
-			TextboxFrame.BackgroundColor3 = Color3.fromRGB(42, 23, 27)
+			TextboxFrame.BackgroundColor3 = Color3.fromRGB(14, 14, 30)
 			TextboxFrame.Position = UDim2.new(0.650124013, 0, 0.142857149, 0)
 			TextboxFrame.Size = UDim2.new(0, 134, 0, 19)
 
@@ -1421,9 +1421,9 @@ function vice:Window(textgame)
 			Container.CanvasSize = UDim2.new(0, 0, 0, ContainerLayout.AbsoluteContentSize.Y)
 		end
 		ImageLabel.Parent = Circle
-ImageLabel.BackgroundColor3 = Color3.fromRGB(70, 33, 37)
+ImageLabel.BackgroundColor3 = Color3.fromRGB(14, 14, 30)
 ImageLabel.BorderSizePixel = 0		
-ImageLabel.Size = UDim2.new(0, 38, 0, 38)
+ImageLabel.Size = UDim2.new(0, 40, 0, 40)
 ImageLabel.Image = "rbxassetid://8709145048"
 
 Frame.Parent = MainFrame
