@@ -171,6 +171,7 @@ function vice:Window(textgame)
 
 	Circle.Name = "Circle"
 	Circle.Parent = LeftFrame
+	Circle.BorderSizePixel = 0
 	Circle.BackgroundColor3 = Color3.fromRGB(118, 106, 255)
 	Circle.Position = UDim2.new(0.0834304541, 0, 0.0474189818, 0)
 	Circle.Size = UDim2.new(0, 38, 0, 38)
@@ -542,7 +543,7 @@ function vice:Window(textgame)
 
 			SliderFrame.Name = "SliderFrame"
 			SliderFrame.Parent = Slider
-			SliderFrame.BackgroundColor3 = Color3.fromRGB(22, 23, 27)
+			SliderFrame.BackgroundColor3 = Color3.fromRGB(14, 14, 30)
 			SliderFrame.Position = UDim2.new(0.0223324299, 0, 0.563266039, 0)
 			SliderFrame.Size = UDim2.new(0, 384, 0, 11)
 
@@ -1360,7 +1361,7 @@ function vice:Window(textgame)
 
 			Textbox.Name = "Textbox"
 			Textbox.Parent = Container
-			Textbox.BackgroundColor3 = Color3.fromRGB(43, 43, 60)
+			Textbox.BackgroundColor3 = Color3.fromRGB(14, 14, 30)
 			Textbox.Position = UDim2.new(-0.747557044, 0, 0.729113936, 0)
 			Textbox.Size = UDim2.new(0, 403, 0, 28)
 			Textbox.AutoButtonColor = false
