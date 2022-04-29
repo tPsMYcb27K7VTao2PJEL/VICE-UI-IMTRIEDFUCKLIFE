@@ -1,5 +1,5 @@
 local vice = {RainbowColorValue = 0, HueSelectionPosition = 0}
-function zigzag(X)
+function zigzag(X)Tab.BackgroundColor3 = Color3.fromRGB
 	return math.acos(math.cos(X * math.pi)) / math.pi
 end
 counter = 0
@@ -251,7 +251,7 @@ function vice:Window(textgame)
 
 		Tab.Name = "Tab"
 		Tab.Parent = TabHolder
-		Tab.BackgroundColor3 = Color3.fromRGB(118, 106, 255)
+		Tab.BackgroundColor3 = Color3.fromRGB(25, 25, 51)
 		Tab.Size = UDim2.new(0, 159, 0, 29)
 		Tab.AutoButtonColor = false
 		Tab.Font = Enum.Font.SourceSans
@@ -327,13 +327,6 @@ function vice:Window(textgame)
 				Container.Visible = true
 			end
 		)
-		coroutine.wrap(
-			function()
-				while wait() do
-					Tab.BackgroundColor3 = Color3.fromRGB(15, 15, 41)
-				end
-			end
-		)()
 		local ContainerItems = {}
 		function ContainerItems:Button(text, callback)
 			local Button = Instance.new("TextButton")
