@@ -238,7 +238,7 @@ function vice:Window(textgame)
 	coroutine.wrap(
 		function()
 			while wait() do
-				RainbowLine.BackgroundColor3 = Color3.fromHSV(zigzag(counter), .8, 1)
+				RainbowLine.BackgroundColor3 = Color3.fromRGB(43, 43, 60)
 				Circle.BackgroundColor3 = Color3.fromHSV(zigzag(counter), .8, 1)
 			end
 		end
