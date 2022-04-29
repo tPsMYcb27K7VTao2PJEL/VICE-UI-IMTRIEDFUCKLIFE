@@ -238,7 +238,7 @@ function vice:Window(textgame)
 	coroutine.wrap(
 		function()
 			while wait() do
-				RainbowLine.BackgroundColor3 = Color3.fromRGB(43, 43, 60)
+				RainbowLine.BackgroundColor3 = Color3.fromRGB(31, 31, 41)
 				Circle.BackgroundColor3 = Color3.fromHSV(zigzag(counter), .8, 1)
 			end
 		end
@@ -358,7 +358,7 @@ function vice:Window(textgame)
 					TweenService:Create(
 						Button,
 						TweenInfo.new(.2, Enum.EasingStyle.Quad),
-						{BackgroundColor3 = Color3.fromRGB(87, 34, 39)}
+						{BackgroundColor3 = Color3.fromRGB(34, 34, 57)}
 					):Play()
 				end
 			)
@@ -459,7 +459,7 @@ function vice:Window(textgame)
 					TweenService:Create(
 						Toggle,
 						TweenInfo.new(.2, Enum.EasingStyle.Quad),
-						{BackgroundColor3 = Color3.fromRGB(87, 34, 39)}
+						{BackgroundColor3 = Color3.fromRGB(34, 34, 57)}
 					):Play()
 				end
 			)
@@ -722,7 +722,7 @@ function vice:Window(textgame)
 					TweenService:Create(
 						Dropdown,
 						TweenInfo.new(.2, Enum.EasingStyle.Quad),
-						{BackgroundColor3 = Color3.fromRGB(87, 34, 39)}
+						{BackgroundColor3 = Color3.fromRGB(34, 34, 57)}
 					):Play()
 				end
 			)
@@ -826,7 +826,7 @@ function vice:Window(textgame)
 						TweenService:Create(
 							Item,
 							TweenInfo.new(.2, Enum.EasingStyle.Quad),
-							{BackgroundColor3 = Color3.fromRGB(87, 34, 39)}
+							{BackgroundColor3 = Color3.fromRGB(34, 34, 57)}
 						):Play()
 					end
 				)
@@ -1097,7 +1097,7 @@ function vice:Window(textgame)
 					TweenService:Create(
 						Colorpicker,
 						TweenInfo.new(.2, Enum.EasingStyle.Quad),
-						{BackgroundColor3 = Color3.fromRGB(87, 34, 39)}
+						{BackgroundColor3 = Color3.fromRGB(34, 34, 57)}
 					):Play()
 				end
 			)
@@ -1434,6 +1434,7 @@ ImageLabel.Image = "rbxassetid://8709145048"
 
 Frame.Parent = MainFrame
 Frame.BackgroundColor3 = Color3.fromRGB(70, 33, 37)
+Frame.BackgroundTransparency = 1.00
 Frame.Position = UDim2.new(0.0209611524, 0, 0.81790787, 0)
 Frame.Size = UDim2.new(0, 165, 0, 70)
 
