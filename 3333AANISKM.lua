@@ -551,7 +551,7 @@ function vice:Window(textgame)
 
 			SliderIndicator.Name = "SliderIndicator"
 			SliderIndicator.Parent = SliderFrame
-			SliderIndicator.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
+			SliderIndicator.BackgroundColor3 = Color3.fromRGB(17, 17, 36)
 			SliderIndicator.BorderSizePixel = 0
 			SliderIndicator.Position = UDim2.new(-0.00260408712, 0, 0.0363603085, 0)
 			SliderIndicator.Size = UDim2.new((start or 0) / max, 0, 0, 11)
@@ -1335,7 +1335,7 @@ function vice:Window(textgame)
 
 			Label.Name = "Label"
 			Label.Parent = Container
-			Label.BackgroundColor3 = Color3.fromRGB(27, 42, 53)
+			Label.BackgroundColor3 = Color3.fromRGB(34, 34, 45)
 			Label.Size = UDim2.new(0, 403, 0, 28)
 			Label.AutoButtonColor = false
 			Label.Font = Enum.Font.Gotham
