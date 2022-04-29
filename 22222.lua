@@ -238,7 +238,7 @@ function vice:Window(textgame)
 	coroutine.wrap(
 		function()
 			while wait() do
-				RainbowLine.BackgroundColor3 = Color3.fromRGB(15, 15, 32)
+				RainbowLine.BackgroundColor3 = Color3.fromRGB(31, 31, 41)
 				Circle.BackgroundColor3 = Color3.fromHSV(zigzag(counter), .8, 1)
 			end
 		end
@@ -330,7 +330,7 @@ function vice:Window(textgame)
 		coroutine.wrap(
 			function()
 				while wait() do
-					Tab.BackgroundColor3 = Color3.fromRGB(25, 25, 41)
+					Tab.BackgroundColor3 = Color3.fromHSV(zigzag(counter), .8, 1)
 				end
 			end
 		)()
@@ -435,7 +435,7 @@ function vice:Window(textgame)
 
 			ToggleFrameRainbow.Name = "ToggleFrameRainbow"
 			ToggleFrameRainbow.Parent = ToggleFrame
-			ToggleFrameRainbow = Color3.fromRGB(255, 0, 0)
+			ToggleFrameRainbow.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
 			ToggleFrameRainbow.BackgroundTransparency = 1.000
 			ToggleFrameRainbow.Position = UDim2.new(-0.0198377371, 0, 0.00601506233, 0)
 			ToggleFrameRainbow.Size = UDim2.new(0, 36, 0, 19)
@@ -508,7 +508,7 @@ function vice:Window(textgame)
 			coroutine.wrap(
 				function()
 					while wait() do
-						ToggleFrameRainbow.BackgroundColor3 = Color3.fromRGB(14, 14, 30)
+						ToggleFrameRainbow.BackgroundColor3 = Color3.fromHSV(zigzag(counter), .8, 1)
 					end
 				end
 			)()
