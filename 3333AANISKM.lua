@@ -413,7 +413,6 @@ function vice:Window(textgame)
 			Title.Size = UDim2.new(0, 192, 0, 28)
 			Title.Font = Enum.Font.Gotham
 			Title.Text = text
-			
 			Title.TextColor3 = Color3.fromRGB(255, 255, 255)
 			Title.TextSize = 14.000
 			Title.TextXAlignment = Enum.TextXAlignment.Left
