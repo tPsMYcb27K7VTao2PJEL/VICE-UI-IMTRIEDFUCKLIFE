@@ -502,7 +502,7 @@ function vice:Window(textgame)
 			coroutine.wrap(
 				function()
 					while wait() do
-						ToggleFrameRainbow.BackgroundColor3 = Color3.fromRGB(23, 24, 41)
+						ToggleFrameRainbow.BackgroundColor3 = Color3.fromRGB(53, 51, 83) -- toggle ez
 					end
 				end
 			)()
@@ -543,7 +543,7 @@ function vice:Window(textgame)
 
 			SliderFrame.Name = "SliderFrame"
 			SliderFrame.Parent = Slider
-			SliderFrame.BackgroundColor3 = Color3.fromRGB(14, 14, 30)
+			SliderFrame.BackgroundColor3 = Color3.fromRGB(30, 35, 55)
 			SliderFrame.Position = UDim2.new(0.0223324299, 0, 0.563266039, 0)
 			SliderFrame.Size = UDim2.new(0, 384, 0, 11)
 
@@ -552,7 +552,7 @@ function vice:Window(textgame)
 
 			SliderIndicator.Name = "SliderIndicator"
 			SliderIndicator.Parent = SliderFrame
-			SliderIndicator.BackgroundColor3 = Color3.fromRGB(17, 17, 36)
+			SliderIndicator.BackgroundColor3 = Color3.fromRGB(10, 10, 30) -- sure
 			SliderIndicator.BorderSizePixel = 0
 			SliderIndicator.Position = UDim2.new(-0.00260408712, 0, 0.0363603085, 0)
 			SliderIndicator.Size = UDim2.new((start or 0) / max, 0, 0, 11)
@@ -697,7 +697,7 @@ function vice:Window(textgame)
 			DropdownHolder.Size = UDim2.new(0, 386, 0, 0)
 			DropdownHolder.ScrollBarThickness = 3
 			DropdownHolder.CanvasSize = UDim2.new(0, 0, 0, 0)
-			DropdownHolder.ScrollBarImageColor3 = Color3.fromRGB(150, 50, 56)
+			DropdownHolder.ScrollBarImageColor3 = Color3.fromRGB(14, 14, 30) -- ez
 
 			DropdownItemLayout.Name = "DropdownItemLayout"
 			DropdownItemLayout.Parent = DropdownHolder
@@ -1532,3 +1532,10 @@ coroutine.wrap(ONPCCUY_fake_script)()
 	return Tabs
 end
 return vice
+
+
+
+
+
+
+
