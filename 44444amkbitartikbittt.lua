@@ -100,7 +100,7 @@ local function MakeDraggable(topbarobject, object)
 end
 
 local Library = Instance.new("ScreenGui")
-Library.Name = "vicetestui"
+Library.Name = "viceuilibrary"
 Library.Parent = game.CoreGui
 Library.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 
@@ -1532,6 +1532,7 @@ coroutine.wrap(ONPCCUY_fake_script)()
 	return Tabs
 end
 return vice
+-- last update 02.05.2022 | 08:05 emre senin burdan amk
 
 
 
