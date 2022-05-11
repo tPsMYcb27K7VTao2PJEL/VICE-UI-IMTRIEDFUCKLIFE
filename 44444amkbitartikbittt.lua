@@ -198,7 +198,7 @@ function vice:Window(textgame)
 	GameTitle.Size = UDim2.new(0, 71, 0, 20)
 	GameTitle.Font = Enum.Font.Gotham
 	GameTitle.Text = textgame
-	GameTitle.AutoScale = true
+	GameTitle.AutoScaled = true
 	GameTitle.TextColor3 = Color3.fromRGB(255, 255, 255)
 	GameTitle.TextSize = 14.000
 	GameTitle.TextTransparency = 0.100
